@@ -27,14 +27,6 @@ resOrdered <- res[order(res$padj),]
 ## Write results
 write.csv(as.data.frame(resOrdered),file="re_nonmRNA_MA9_Dox3vsMA9_Con0_results.csv")
 
-
-
-
-
-
-
-
-
 #Visulization------------------------------------------------------------------
 plotMA(dds, ylim=c(-1,1), cex=1)
 

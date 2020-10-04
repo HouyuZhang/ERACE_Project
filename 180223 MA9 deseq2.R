@@ -22,23 +22,6 @@ resultsNames(dds)
 
 write.csv(counts(dds, normalized=TRUE),"MA9_ATAC_genescounts_DESeq_normalized.csv")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 results(dds,contrast = c("condition","Dox3hour","Con0hour"))
 resDox3_0 <- results(dds,contrast = c("condition","Dox3hour","Con0hour"))
 write.csv(as.data.frame(resDox3_0),file = "MA9Dox3_0_wald.csv")
